@@ -1,0 +1,24 @@
+{
+  "name": "15hra8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asifChoudhury/15hra8.git"
+  },
+  "author": "md asif choudhury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asifChoudhury/15hra8/issues"
+  },
+  "homepage": "https://github.com/asifChoudhury/15hra8#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
