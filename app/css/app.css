@@ -1,5 +1,128 @@
-html,
-body {
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-200%); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(200%); }
+  100% {
+    transform: translateY(0); } }
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(247, 247, 247, 0.9); }
+
+header,
+main,
+section,
+footer {
+  display: block;
+  text-align: center; }
+
+.section-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-image: url("../img/cover2.jpg");
+  animation: 1.5s ease-out 0s 1 slideInFromTop; }
+
+#container {
+  padding: 0; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50; }
+
+.section-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.section-full-height {
+  height: 100vh; }
+
+.section-home-content {
+  position: absolute;
+  top: 15%;
+  color: #ca1515;
+  width: 100%;
+  z-index: 2; }
+
+.name {
+  font-size: 4em;
+  font-weight: 200;
+  animation: 2s ease-out 0s 1 slideInFromLeft; }
+
+.title {
+  font-size: 3em;
+  font-weight: 200;
+  animation: 2.1s ease-out 0s 1 slideInFromRight; }
+
+.link-projects {
+  position: absolute;
+  box-sizing: content-box;
+  width: 100%;
+  animation: 2s ease-out 0s 1 slideInFromBottom;
+  bottom: 0;
+  z-index: 3; }
+
+.link-projects:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out; }
+
+.link-projects a {
+  color: #ca1515;
+  font-size: 1.7em;
+  font-weight: 300; }
+
+.link {
+  text-decoration: none !important; }
+
+.link:hover {
+  color: red;
+  -webkit-transition: color .3s ease-in-out;
+  /* Safari */
+  transition: color .3s ease-in-out; }
+
+.section-projects {
+  box-sizing: content-box;
+  padding-top: 2%; }
+
+.project {
+  padding-top: 1%; }
