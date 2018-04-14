@@ -35,7 +35,8 @@ body {
   line-height: normal;
   text-align: center;
   -webkit-font-smoothing: antialiased;
-  background-color: rgba(247, 247, 247, 0.9); }
+  background-color: rgba(247, 247, 247, 0.9);
+  font-weight: 200; }
 
 header,
 main,
@@ -120,6 +121,10 @@ footer {
   /* Safari */
   transition: color .3s ease-in-out; }
 
+#header-projects-section {
+  font-size: 4em;
+  font-weight: 200; }
+
 .section-projects {
   box-sizing: content-box;
   padding-top: 2%; }
@@ -127,11 +132,27 @@ footer {
 .project {
   padding-top: 5%; }
 
+.project-name {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 300; }
+
+.course-name {
+  font-size: 2em;
+  font-weight: 200; }
+
 .project-img {
   padding: 1.5em .2em .5em; }
 
 .size-sm {
-  width: 35%; }
+  width: 30%; }
+
+.size-sm:hover {
+  transform: scale(1.2);
+  transition: transform .5s ease; }
 
 .size-full {
-  width: 70%; }
+  width: 60%; }
+
+p {
+  font-weight: 200; }
