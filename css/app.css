@@ -31,6 +31,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
   line-height: normal;
   text-align: center;
   -webkit-font-smoothing: antialiased;
@@ -129,7 +130,7 @@ footer {
   padding-top: 2%; }
 
 .project {
-  padding-top: 10%; }
+  padding-top: 5%; }
 
 .project-name {
   margin: 0;

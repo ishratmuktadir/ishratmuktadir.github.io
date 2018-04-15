@@ -6,15 +6,19 @@ gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('./css'))
     .pipe(browserSync.reload({
       stream: true
     }))
 });
 
 gulp.task('copyFiles', function() {
-    gulp.src('app/')
+    gulp.src('app/**/*.*')
     .pipe(gulp.dest('./'))
-})
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
 
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -23,10 +27,11 @@ gulp.task('browserSync', function() {
     },
     browser: 'google chrome'
   })
-})
+});
 
-gulp.task('watch', ['copyFiles', 'browserSync', 'sass'], function() {
+gulp.task('watch', ['sass', 'copyFiles', 'browserSync'], function() {
+    gulp.watch('app/*.html', ['copyFiles']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
     gulp.watch('app/scss/**/*.scss', ['sass']);
-})
+});
