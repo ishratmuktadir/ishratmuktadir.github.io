@@ -11,6 +11,11 @@ gulp.task('sass', function() {
     }))
 });
 
+gulp.task('copyFiles', function() {
+    gulp.src('app/')
+    .pipe(gulp.dest('./'))
+})
+
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
@@ -20,7 +25,7 @@ gulp.task('browserSync', function() {
   })
 })
 
-gulp.task('watch', ['browserSync', 'sass'], function() {
+gulp.task('watch', ['copyFiles', 'browserSync', 'sass'], function() {
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
     gulp.watch('app/scss/**/*.scss', ['sass']);
