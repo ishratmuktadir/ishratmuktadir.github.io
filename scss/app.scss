@@ -38,11 +38,12 @@ footer {
     width: 100%;
     height: 100vh;
     z-index: 1;
-    background-image: url('../img/cover2.jpg');
+    background: url('../img/cover2.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
-    animation: 1.5s ease-out 0s 1 slideInFromTop;
+
+    animation: 2s ease-out 0s 1 slideInFromRight;
 }
 
 .section-home {
@@ -71,14 +72,14 @@ footer {
     font-size: 4em;
     font-weight: 200;
 
-    animation: 2s ease-out 0s 1 slideInFromLeft;
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
 }
 
 .title {
     font-size: 3em;
     font-weight: 200;
 
-    animation: 2.1s ease-out 0s 1 slideInFromRight;
+    animation: 1.8s ease-out 0s 1 slideInFromRight;
 
 }
 
@@ -180,7 +181,7 @@ p {
 }
 
 li {
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #e8e3e3;
     padding-bottom: 5%;
 }
 
@@ -262,9 +263,11 @@ li:last-child {
     media queries
  */
 
-@media only screen and (min-width: 320px) and (max-width: 749px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
     .section-img {
-        background-attachment: initial;
+
+        background: url('../img/cover1.jpg') no-repeat;
+        background-size: cover;
     }
 }
 
