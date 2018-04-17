@@ -28,8 +28,10 @@ footer {
     width: 100%;
 }
 
+
+
 /*
-   section-home
+   Home Section
  */
 .section-img {
     position: absolute;
@@ -118,8 +120,9 @@ footer {
 }
 
 
+
 /*
-   section-projects
+   Projects Section
  */
 
 #header-projects-section {
@@ -162,11 +165,6 @@ footer {
     width: 35%;
 }
 
-.size-sm:hover {
-    transform: scale(1.2);
-    transition: transform .5s ease;
-}
-
 .size-full {
     width: 70%;
 }
@@ -189,11 +187,15 @@ li:last-child {
     border: none;
 }
 
+
+
+/*
+    Footer Section
+ */
 .section-footer {
-    width: 100%;
     font-size: 1.3em;
     padding: 5% 0;
-    background-color: #e4e4e4;
+    background-color: #f5f4f4;
     color: #a9a5a5;
 }
 
@@ -220,9 +222,12 @@ li:last-child {
     font-size: .8em;
 }
 
+
+
 /*
-    animation
+    Animation
  */
+
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
@@ -259,8 +264,10 @@ li:last-child {
     }
 }
 
+
+
 /*
-    media queries
+    Media Queries
  */
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
